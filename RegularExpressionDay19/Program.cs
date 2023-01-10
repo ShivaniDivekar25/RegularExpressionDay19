@@ -5,6 +5,17 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Regular Expression Programs");
+            Console.WriteLine("Please enter the option given below");           //Taking user input
+            Console.WriteLine("1:Create first name");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch (option)             //using switch case calling different method
+            {
+                case 1:
+                    RegularExpression.fisrtName();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
