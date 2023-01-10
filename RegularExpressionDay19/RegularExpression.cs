@@ -33,10 +33,10 @@ namespace RegularExpressionDay19
             string[] arr = { "91 9421253907" };
             TestPattern(pattern, arr);
         }
-        public static void passward()          //Created phone number method
+        public static void passward()          //Created passward method
         {
-            string pattern = "^[a-zA-Z]{8,}$";
-            string[] arr = { "ajkdlabh" ,"haskjkl" };
+            string pattern = "^[A-Z]{1}[a-z]{8,}$";
+            string[] arr = { "Ajkdlabhl" ,"Ahaskjkl" };
             TestPattern(pattern, arr);
         }
         public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
@@ -52,7 +52,6 @@ namespace RegularExpressionDay19
                     Console.WriteLine("{0} is invalid", inputs);
                 }
             }
-
         }
     }
 }
