@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Regular Expression Programs");
             Console.WriteLine("Please enter the option given below");           //Taking user input
-            Console.WriteLine("1:Create first name\n2:Create last name\n3:Create valid Email ID\n4:Create phone number with country code");
+            Console.WriteLine("1:Create first name\n2:Create last name\n3:Create valid Email ID\n4:Create phone number with country code\n5:Create passward");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)             //using switch case calling different method
             {
@@ -21,6 +21,9 @@
                     break;
                 case 4:
                     RegularExpression.phoneNumber();
+                    break;
+                case 5:
+                    RegularExpression.passward();
                     break;
                 default:
                     Console.WriteLine("Please choose correct option");

@@ -33,6 +33,12 @@ namespace RegularExpressionDay19
             string[] arr = { "91 9421253907" };
             TestPattern(pattern, arr);
         }
+        public static void passward()          //Created phone number method
+        {
+            string pattern = "^[a-zA-Z]{8,}$";
+            string[] arr = { "ajkdlabh" ,"haskjkl" };
+            TestPattern(pattern, arr);
+        }
         public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
         {
             foreach (string inputs in arr)
