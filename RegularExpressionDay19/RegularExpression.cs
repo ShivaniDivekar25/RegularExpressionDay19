@@ -15,6 +15,12 @@ namespace RegularExpressionDay19
             string[] arr = { "Shivani" };
             TestPattern(pattern, arr);
         }
+        public static void lastName()          //Created last name method
+        {
+            string pattern = "^[A-Z]{1}[a-z]{2,}$";
+            string[] arr = { "Divekar" };
+            TestPattern(pattern, arr);
+        }
         public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
         {
             foreach (string inputs in arr)
