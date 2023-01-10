@@ -30,7 +30,7 @@ namespace RegularExpressionDay19
         public static void phoneNumber()          //Created phone number method
         {
             string pattern = "^[0-9]{2}[ ][0-9]{10}$";
-            string[] arr = { "91 8983922703" };
+            string[] arr = { "91 9421253907" };
             TestPattern(pattern, arr);
         }
         public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
