@@ -33,10 +33,10 @@ namespace RegularExpressionDay19
             string[] arr = { "91 9421253907" };
             TestPattern(pattern, arr);
         }
-        public static void passward()          //Created passward method
+        public static void password()          //Created passward method
         {
-            string pattern = "^[A-Z]{1}[a-z]{8,}$";
-            string[] arr = { "Ajkdlabhl" ,"Ahaskjkl" };
+            string pattern = "^[A-Z]{1}[a-z]{7,}[0-9]{1}$";
+            string[] arr = { "Ajkdlabhl7" ,"Ahaskjkl77" };
             TestPattern(pattern, arr);
         }
         public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
