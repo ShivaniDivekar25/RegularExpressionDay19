@@ -21,6 +21,12 @@ namespace RegularExpressionDay19
             string[] arr = { "Divekar" };
             TestPattern(pattern, arr);
         }
+        public static void validEmail()          //Created email method
+        {
+            string pattern = "^[a-z]{3}.[a-z]{2,}@[a-z]{2}.[a-z]{2}.[a-z]{2}$";
+            string[] arr = { "abc.xyz@bl.co.in" };
+            TestPattern(pattern, arr);
+        }
         public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
         {
             foreach (string inputs in arr)
