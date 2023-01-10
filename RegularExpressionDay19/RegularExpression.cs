@@ -35,8 +35,8 @@ namespace RegularExpressionDay19
         }
         public static void password()          //Created passward method
         {
-            string pattern = "^[A-Z]{1}[a-z]{7,}[0-9]{1}$";
-            string[] arr = { "Ajkdlabhl7" ,"Ahaskjkl77" };
+            string pattern = "^[A-Z]{1}[a-z]{7,}(@|#|$|&)[0-9]{1}$";
+            string[] arr = { "Ajkdlabhl@7" ,"Ahaskj#kl77" };
             TestPattern(pattern, arr);
         }
         public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
