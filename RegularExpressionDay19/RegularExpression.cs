@@ -27,6 +27,12 @@ namespace RegularExpressionDay19
             string[] arr = { "abc.xyz@bl.co.in" };
             TestPattern(pattern, arr);
         }
+        public static void phoneNumber()          //Created phone number method
+        {
+            string pattern = "^[0-9]{2}[ ][0-9]{10}$";
+            string[] arr = { "91 8983922703" };
+            TestPattern(pattern, arr);
+        }
         public static void TestPattern(string pattern, string[] arr)            //Created Test pattern method
         {
             foreach (string inputs in arr)
